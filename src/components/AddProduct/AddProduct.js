@@ -20,7 +20,7 @@ const AddProduct = () => {
         }
     console.log(shoppingData);
 
-    const url = `http://localhost:5000/addShopping`;
+    const url = `https://aqueous-headland-21885.herokuapp.com/addShopping`;
 
     fetch(url, {
         method: 'POST',

@@ -2,14 +2,14 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
 import { UserContext } from '../../App';
 import SingleOrder from '../SingleOrder/SingleOrder';
-import spinner from '../Home/img/Group 33149.png'
+import spinner from '../Home/img/loading.gif'
 const OrderedItems = () => {
     
     const [orderedItem , setOrderedItem] = useState([]);
     const [loggedInUser, setLoggedInUser] = useContext(UserContext)
     
     useEffect(()=>{
-        fetch('http://localhost:5000/orders?email='+loggedInUser.email)
+        fetch('https://aqueous-headland-21885.herokuapp.com/orders?email='+loggedInUser.email)
         .then(res => res.json())
         .then(data => setOrderedItem(data))
     },[loggedInUser.email])

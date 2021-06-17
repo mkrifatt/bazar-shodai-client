@@ -10,7 +10,7 @@ const OrderCheckOut = () => {
     const {name, price} =orderCheckout;
 
     useEffect(()=>{
-        const url= `http://localhost:5000/shopping/${id}`
+        const url= `https://aqueous-headland-21885.herokuapp.com/shopping/${id}`
      //   console.log(url);
         fetch(url)
         .then(res => res.json())
@@ -23,7 +23,7 @@ const OrderCheckOut = () => {
         const newOrder = {...loggedInUser,...orderCheckout, date}
         delete newOrder._id
         console.log(newOrder);
-        fetch('http://localhost:5000/orderCheckout', {
+        fetch('https://aqueous-headland-21885.herokuapp.com/orderCheckout', {
             method : 'POST',
             headers:{ 
                 'Content-Type': 'Application/json'

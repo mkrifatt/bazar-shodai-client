@@ -4,7 +4,7 @@ const ManageProductTable = ({product}) => {
     const {name, weight, price,_id} = product
 console.log(product);
     const handleDelete = (id,event) => {
-        fetch(`http://localhost:5000/delete/${id}`,{
+        fetch(`https://aqueous-headland-21885.herokuapp.com/delete/${id}`,{
             method : 'DELETE'
         })
         .then(res => res.json())

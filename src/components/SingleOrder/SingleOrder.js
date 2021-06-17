@@ -6,7 +6,7 @@ const SingleOrder = ({order}) => {
     const {image, email, name, date, configuration, _id} = order
 
     const handleDelete = (id,event) => {
-        fetch(`http://localhost:5000/cancelOrder/${id}`,{
+        fetch(`https://aqueous-headland-21885.herokuapp.com/cancelOrder/${id}`,{
             method : 'DELETE'
         })
         .then(res => res.json())
