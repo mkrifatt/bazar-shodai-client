@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { Container, Row } from 'react-bootstrap';
 import Products from '../Products/Products';
 import './Home.css'
+import spinner from './img/loading.gif'
 const Home = () => {
     const [shopping, setShopping] = useState([]);
     useEffect(() =>{
@@ -19,6 +20,10 @@ const Home = () => {
             <Row>
                 {
                     shopping.map(product => <Products key={product._id} product={product}></Products>)
+                }
+                {
+                    shopping.length > 0 ? shopping.map(product  => <Products key={product._id} product={product} />) 
+                    :<img style={{width:'30%'}} className="text-center m-auto" src={spinner} alt="..."/>   
                 }
             </Row>
         </Container>
