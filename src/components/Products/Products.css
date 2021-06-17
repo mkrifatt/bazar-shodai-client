@@ -1,0 +1,10 @@
+.img img {
+    height: 250px;
+    width: 100%;
+    object-fit: contain;
+  }
+  
+  .footer {
+    border: none;
+    background-color: white;
+  }

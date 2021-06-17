@@ -1,0 +1,19 @@
+.submit-area {
+    border-radius: 20px;
+    border: 1px solid lightgray;
+    box-shadow: 10px 10px 10px 2px gray;
+  }
+  
+  .submit {
+    width: 70px;
+    padding: 6px;
+    background-color: #28a745;
+    border: 0;
+    color: white;
+    border-radius: 5px;
+    margin-top: 7px;
+  }
+  
+  input {
+    margin: 7px;
+  }

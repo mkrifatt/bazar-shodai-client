@@ -1,0 +1,38 @@
+.order-details {
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding: 10px;
+    width: 80%;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  
+  .delete {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .delete:hover {
+    cursor: pointer;
+  }
+  
+  .order {
+    display: flex;
+  }
+  
+  .img img {
+    height: 150px;
+    width: 150px;
+    object-fit: contain;
+  }
+  
+  .details h5 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-weight: 600;
+  }
+  
+  .details h6 {
+    margin-top: 7px;
+    font-weight: 400;
+  }
